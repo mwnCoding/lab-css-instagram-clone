@@ -7,4 +7,104 @@ light blue: #1c5380
 body {
   font: 200 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 0;
+  background: linear-gradient(
+    to bottom,
+    #1c5380 0%,
+    #1c5380 30%,
+    white 30%,
+    white 100%
+  );
+  background-repeat: no-repeat;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10vh;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  margin-bottom: 5vh;
+}
+
+.sub-container {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content-container {
+  margin-top: 2vh;
+  padding: 0 4vw;
+  box-shadow: 0 -1px 4px black;
+  border-radius: 1%;
+  background-color: white;
+}
+
+.phone-img {
+  margin-right: 5vw;
+}
+
+.button-contrainer {
+  display: flex;
+}
+
+.login-button::before {
+  /* content: url(/images/home.png) */
+}
+
+.login-button {
+  text-align: center;
+  width: 5rem;
+  height: 2rem;
+  padding: 0;
+  background-color: #1c5380; 
+  border-style: solid;
+  color: white;
+  box-shadow: 0 2px 2px black;
+}
+
+.login-button:active {
+  box-shadow: 0 1px 2px black;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 1vh 20vw;
+}
+
+.footer-link {
+  text-decoration: none;
+}
+
+.footer-link:link {
+  color: #1c5380;
+}
+
+@media (max-width: 1075px) {
+  .phone-img {
+    display: none;
+  }
+
+  .sub-container {
+    
+  }
+
+  .footer-container {
+    justify-content: center;
+  }
+
+
+}
+
+@media (max-width: 360px) {
+  
 }
